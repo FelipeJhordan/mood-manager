@@ -20,7 +20,7 @@ Projeto feito em grupo,  sobre um aplicativo mobile para registrar emoções e m
 
 ### Participantes
 - Dev full-stack - Felipe Jhordan Maciel Alves ( Eu )
-- Dev full-stack - Daniel Campos 
+- Dev full-stack - Daniel Campos ( https://github.com/danielcampos-m )
 
 ### Links
 - Repositório mobile original ( https://github.com/tcd-pdw/mobile/tree/main )

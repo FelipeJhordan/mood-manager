@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtWishLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:clickable="true"
+        android:onClick="wishSignIn"
+        android:text="@string/lb_wish_sign_in"
+        android:textColor="@color/secondary"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llRegisterPassword"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llRegisterEmail">
+
+        <ImageView
+            android:id="@+id/ivPassword"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_password" />
+
+        <EditText
+            android:id="@+id/edTxtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/secondary"
+            android:ems="10"
+            android:hint="@string/txt_form_password"
+            android:inputType="textPassword"
+            android:textColor="@color/secondary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRegisterEmail"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/llRegisterPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llRegisterName">
+
+        <ImageView
+            android:id="@+id/ivEmail"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_email" />
+
+        <EditText
+            android:id="@+id/edTxtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/secondary"
+            android:ems="10"
+            android:hint="@string/txt_form_email"
+            android:inputType="textUri|textLongMessage|textWebEmailAddress|textPersonName"
+            android:textColor="@color/secondary" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_register_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/agrupar_2_3" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/txt_register_title"
+        android:textColor="@color/secondary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtWishLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_register_logo"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <LinearLayout
+        android:id="@+id/llRegisterName"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSignUp">
+
+        <ImageView
+            android:id="@+id/ivUser"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingHorizontal="0dp"
+            android:paddingVertical="5dp"
+            app:srcCompat="@drawable/ic_username" />
+
+        <EditText
+            android:id="@+id/edTxtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/secondary"
+            android:ems="10"
+            android:hint="@string/txt_form_name"
+            android:inputType="textPersonName"
+            android:shadowColor="#873F3F"
+            android:textColor="@color/secondary" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iconSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_horizontal"
+        android:onClick="OnSignupSubmit"
+        app:layout_constraintBottom_toTopOf="@+id/txtWishLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llRegisterPassword"
+        app:layout_constraintVertical_bias="0.415"
+        app:srcCompat="@drawable/btn_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

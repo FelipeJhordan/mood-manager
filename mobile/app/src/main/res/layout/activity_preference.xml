@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/txtPreferenceSetTiming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/txt_preferences_notifications_set_timing"
+        android:textColor="@color/secondary"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPreferenceSugestSomeSadMusic" />
+
+    <TextView
+        android:id="@+id/txtPreferenceWhenDown2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="332dp"
+        android:text="@string/txt_preferences_notifications_when_down"
+        android:textColor="@color/secondary"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPreferenceSugestSome" />
+
+    <TextView
+        android:id="@+id/txt_when_down2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="332dp"
+        android:text="@string/txt_preferences_notifications_when_down"
+        android:textColor="@color/secondary"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPreferenceSugestSome" />
+
+    <CheckBox
+        android:id="@+id/cbPreferencePleaseCheerUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/secondary"
+        android:checked="true"
+        android:includeFontPadding="true"
+        android:paddingStart="16dp"
+        android:text="@string/txt_preferences_notifications_when_down_please_cheer_me_up"
+        android:textColor="@color/font"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreferenceWhenDown" />
+
+    <CheckBox
+        android:id="@+id/cbPreferenceSugestSomeSadMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/secondary"
+        android:checked="true"
+        android:includeFontPadding="true"
+        android:paddingStart="16dp"
+        android:text="@string/txt_preferences_notifications_when_down_sugest_some_sad_music"
+        android:textColor="@color/font"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPreferencePleaseCheerUp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtPreferenceWhenDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="332dp"
+        android:text="@string/txt_preferences_notifications_when_down"
+        android:textColor="@color/secondary"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPreferenceSugestSome" />
+
+    <TextView
+        android:id="@+id/txtPreferenceNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="604dp"
+        android:text="@string/txt_preferences_notifications"
+        android:textColor="@color/secondary"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <TextView
+        android:id="@+id/txtPreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/txt_preferences_title"
+        android:textColor="@color/secondary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtPreferenceNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:onClick="toHome"
+        app:layout_constraintBottom_toTopOf="@+id/txtPreferenceNotification"
+        app:layout_constraintEnd_toStartOf="@+id/txtPreference"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <CheckBox
+        android:id="@+id/cbPreferenceCheerMeUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:buttonTint="@color/secondary"
+        android:includeFontPadding="true"
+        android:paddingStart="16dp"
+        android:text="@string/txt_preferences_notifications_cheer_me_up"
+        android:textColor="@color/font"
+        android:textSize="18sp"
+        android:onClick="onCheckListener"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreferenceNotification" />
+
+    <CheckBox
+        android:id="@+id/cbPreferenceHelpImprove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/secondary"
+        android:paddingStart="16dp"
+        android:onClick="onCheckListener"
+        android:text="@string/txt_preferences_notifications_help_me_improve"
+        android:textColor="@color/font"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPreferenceCheerMeUp" />
+
+    <CheckBox
+        android:id="@+id/cbPreferenceSugestSome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/secondary"
+        android:paddingStart="16dp"
+        android:text="@string/txt_preferences_notifications_sugest_me_some_music"
+        android:textColor="@color/font"
+        android:textSize="18sp"
+        android:onClick="onCheckListener"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPreferenceHelpImprove" />
+
+    <LinearLayout
+        android:id="@+id/llTiming2"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="95dp"
+        android:background="@drawable/et_timming_ll"
+        android:backgroundTint="#9FBA671E"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreferenceSetTiming">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTiming2Time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingLeft="20dp"
+                android:text="09:00 - 11:00 pm"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="2dp"
+                android:text="Sleepy"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/swPreferenceTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:paddingVertical="0dp"
+            android:switchPadding="0dp"
+            android:theme="@style/SwitchTheme" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

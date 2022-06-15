@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MoodManager</string>
+    <string name="txt_form_name">Name</string>
+    <string name="txt_form_password">Password</string>
+    <string name="txt_form_email">E-mail</string>
+    <string name="lb_wish_sign_in">I wish sign in</string>
+    <string name="txt_register_title">Sign Up</string>
+    <string name="txt_wish_sign_up">I wish sign up</string>
+    <string name="txt_login_title">Log In</string>
+    <string name="txt_login_email">Enter with your email</string>
+    <string name="txt_login_password">Input your password</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="txt_preferences_title">Preferences</string>
+    <string name="txt_preferences_notifications">Notifications</string>
+    <string name="txt_preferences_notifications_cheer_me_up">Cheer me up</string>
+    <string name="txt_preferences_notifications_help_me_improve">Help me improve my habits</string>
+    <string name="txt_preferences_notifications_sugest_me_some_music">Sugest me some music</string>
+    <string name="txt_preferences_notifications_when_down">When I´m down</string>
+    <string name="txt_preferences_notifications_when_down_please_cheer_me_up">Please cheer me up</string>
+    <string name="txt_preferences_notifications_when_down_sugest_some_sad_music">Sugest me some sad music</string>
+    <string name="txt_preferences_notifications_set_timing">Set timing</string>
+    <string name="txt_home_preferences">Preferences</string>
+    <string name="txt_home_mood_history">Mood history</string>
+    <string name="txt_home_interests">Interests</string>
+    <string name="txt_history_why">Why?</string>
+    <string name="txt_history_today_feeling">Today I´m feeling...</string>
+    <string name="title_activity_home">HomeActivity</string>
+</resources>
